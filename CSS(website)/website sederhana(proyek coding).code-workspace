@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../tugas coding"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../flowchart"
+		},
+		{
+			"path": "../../portofolio pribadi"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "flowchart"
+	}
+}

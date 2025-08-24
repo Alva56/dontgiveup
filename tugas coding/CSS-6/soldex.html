@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-1/5 bg-purple-700 p-5 text-white">
+            <h1 class="text-xl font-bold">COMPANY</h1>
+            <ul class="mt-5 space-y-4">
+                <li class="opacity-80 hover:opacity-100 cursor-pointer">Dashboard</li>
+                <li class="opacity-80 hover:opacity-100 cursor-pointer">Earnings</li>
+                <li class="opacity-80 hover:opacity-100 cursor-pointer">Report</li>
+                <li class="opacity-80 hover:opacity-100 cursor-pointer">Export</li>
+                <li class="opacity-80 hover:opacity-100 cursor-pointer">Settings</li>
+                <li class="opacity-80 hover:opacity-100 cursor-pointer">Account</li>
+            </ul>
+        </div>
+        <!-- Content -->
+        <div class="w-4/5 p-5">
+            <!-- Stats -->
+            <div class="grid grid-cols-4 gap-4">
+                <div class="bg-white p-5 shadow rounded-lg text-center">
+                    <p class="text-gray-500">Followers</p>
+                    <h2 class="text-2xl font-bold text-orange-500">54,561</h2>
+                </div>
+                <div class="bg-white p-5 shadow rounded-lg text-center">
+                    <p class="text-gray-500">Favorites</p>
+                    <h2 class="text-2xl font-bold text-purple-500">30,439</h2>
+                </div>
+                <div class="bg-white p-5 shadow rounded-lg text-center">
+                    <p class="text-gray-500">Earnings</p>
+                    <h2 class="text-2xl font-bold text-red-500">$19,826</h2>
+                </div>
+                <div class="bg-white p-5 shadow rounded-lg text-center">
+                    <p class="text-gray-500">Watch</p>
+                    <h2 class="text-2xl font-bold text-blue-500">758,369</h2>
+                </div>
+            </div>
+            <!-- Chart Placeholder -->
+            <div class="mt-5 bg-white p-5 shadow rounded-lg h-64">
+                <h2 class="text-gray-700 text-lg">Income Graphic</h2>
+                <div class="h-48 flex items-center justify-center"></div>
+            </div>
+            <!-- Expense Placeholder -->
+            <div class="mt-5 bg-white p-5 shadow rounded-lg">
+                <h2 class="text-gray-700 text-lg">Expense</h2>
+                <div class="flex justify-between mt-3">
+                    <div class="text-center">
+                        <p class="text-gray-500">50%</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500">25%</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500">60%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

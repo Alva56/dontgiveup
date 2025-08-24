@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f3f4f6;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #6b46c1, #8e44ad);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.sidebar ul li.active {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.stat-box {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container, .bottom-widgets {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expense-data {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.other-widgets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.most-viewed, .growth, .messages {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.most-viewed ul {
+    list-style: none;
+    padding: 0;
+}
+
+.most-viewed ul li button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
