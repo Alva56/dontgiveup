@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f9f1e7; /* warna krem */
+  color: #5c4033; /* warna coklat tua */
+}
+
+header {
+  background: linear-gradient(
+    to right,
+    #8b4513,
+    #a0522d
+  ); /* coklat tua ke sedang */
+  color: #f9f1e7;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products h2,
+.cart h2 {
+  margin-bottom: 1.5rem;
+  color: #8b4513;
+}
+
+.product-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: #fff9ee; /* krem muda */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 250px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #8b4513;
+}
+
+.product-card p {
+  font-weight: bold;
+  color: #a0522d;
+}
+
+.btn-add {
+  background-color: #8b4513;
+  color: #f9f1e7;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.btn-add:hover {
+  background-color: #a0522d;
+}
+
+.cart {
+  margin-top: 3rem;
+  background-color: #fff9ee;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+  list-style: none;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #d2b48c;
+}
+
+.btn-checkout {
+  background-color: #a0522d;
+  color: #f9f1e7;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.btn-checkout:hover {
+  background-color: #8b4513;
+}

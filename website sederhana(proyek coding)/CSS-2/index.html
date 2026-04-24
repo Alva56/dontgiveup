@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Tubruk Alva</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kopi Tubruk Alva</h1>
+      <p>Wangi & Pahitnya Khas Nusantara</p>
+    </header>
+
+    <main>
+      <section class="products">
+        <h2>Menu Kopi Kami</h2>
+        <div class="product-list">
+          <div class="product-card">
+            <img
+              src="https://via.placeholder.com/200x200/8B4513/FFF?text=Kopi+Tubruk+Asli"
+              alt="Kopi Tubruk Asli"
+            />
+            <h3>Kopi Tubruk Asli</h3>
+            <p>Rp 25.000</p>
+            <button
+              class="btn-add"
+              data-id="1"
+              data-name="Kopi Tubruk Asli"
+              data-price="25000"
+            >
+              Tambah ke Keranjang
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://via.placeholder.com/200x200/8B4513/FFF?text=Kopi+Gula+Jawa"
+              alt="Kopi Gula Jawa"
+            />
+            <h3>Kopi Gula Jawa</h3>
+            <p>Rp 30.000</p>
+            <button
+              class="btn-add"
+              data-id="2"
+              data-name="Kopi Gula Jawa"
+              data-price="30000"
+            >
+              Tambah ke Keranjang
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://via.placeholder.com/200x200/8B4513/FFF?text=Kopi+Madu"
+              alt="Kopi Madu"
+            />
+            <h3>Kopi Madu</h3>
+            <p>Rp 35.000</p>
+            <button
+              class="btn-add"
+              data-id="3"
+              data-name="Kopi Madu"
+              data-price="35000"
+            >
+              Tambah ke Keranjang
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="cart">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: Rp 0</p>
+        <button id="checkout-btn" class="btn-checkout">Checkout</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
