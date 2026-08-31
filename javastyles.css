@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #4facfe,
+    #00f2fe,
+    pink
+  ); /* Abu-abu terang khas form */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 640px;
+}
+
+.form-section {
+  background: #fbfbfc;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 12px;
+  border: 1px solid #1606f1;
+}
+
+/* Aksen Biru di Atas */
+.header-blue {
+  border-top: 10px solid #1a73e8; /* Biru Google */
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+}
+h3 {
+  margin-top: 0;
+  color: #202124;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dadce0;
+  padding: 8px 0;
+  outline: none;
+  transition: border-bottom 0.3s;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #1a73e8;
+}
+
+.question {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1557b0;
+}
