@@ -1,118 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMKN 5 Kota Bekasi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>SMKN 5 KOTA BEKASI</h1>
-            </div>
-            <nav>
-                <a href="#beranda">Beranda</a>
-                <a href="#profil">Profil</a>
-                <a href="#jurusan">Jurusan</a>
-                <a href="#ekskul">Ekstrakurikuler</a>
-                <a href="#kontak">Kontak</a>
-                <a href="#ujian">Ujian</a>
-            </nav>
-            <div class="clear"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Generator QR Code - Ekskul Robotik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body class="bg-gray-100 font-sans p-6">
+    <div class="max-w-3xl mx-auto">
+      <!-- Header -->
+      <div
+        class="flex justify-between items-center bg-white p-6 rounded-xl shadow-sm mb-6 border border-gray-200"
+      >
+        <div>
+          <h1 class="text-xl font-bold text-gray-800">
+            Admin - Generator QR Code Sesi
+          </h1>
+          <p class="text-xs text-gray-500">
+            Klik (+) untuk membuat project tanggal sesi absensi baru.
+          </p>
         </div>
-    </header>
+        <!-- Tombol (+) New Folder/Project Sesi -->
+        <button
+          onclick="openFolderModal()"
+          class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg shadow text-sm font-medium transition"
+        >
+          <i class="fa-solid fa-plus"></i> New Sesi / Folder
+        </button>
+      </div>
 
-    <section id="beranda" class="hero">
-        <div class="container">
-            <h2>Selamat Datang di Website Resmi</h2>
-            <p>Mewujudkan Generasi Terampil, Mandiri, dan Berakhlak Mulia</p>
-        </div>
-    </section>
-
-    <div class="container">
-        
-        <section id="profil">
-            <h2 class="section-title">Profil Sekolah</h2>
-            <div class="profil-box">
-                <img src="bk.jpg" alt="Deskripsi Gambar" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 15px;">
-                <p><strong>SMKN 5 Kota Bekasi</strong> adalah sekolah menengah kejuruan yang berdedikasi untuk mencetak tenaga kerja profesional dan siap pakai di bidang teknologi, rekayasa, kimia, dan ekonomi kreatif. Kami berkomitmen memberikan pendidikan keahlian berkualitas tinggi bagi para siswa.</p>
-            </div>
-        </section>
-
-        <section id="jurusan">
-            <h2 class="section-title">Program Keahlian</h2>
-            <div class="jurusan-container">
-                
-                <div class="jurusan-card">
-                    <img src="rpl.webp" alt="Deskripsi Gambar" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 15px;">
-                    <h3>PPLG</h3>
-                    <p><strong>Pengembangan Perangkat Lunak dan Gim:</strong> Mempelajari pemrograman komputer, pembuatan website, aplikasi mobile, dan pengembangan gim.</p>
-                </div>
-
-                <div class="jurusan-card">
-                    <img src="ti.webp" alt="Deskripsi Gambar" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 15px;">
-                    <h3>Teknik Elektronika</h3>
-                    <p><strong>Teknik Elektronika:</strong> Fokus pada penguasaan sistem kelistrikan, komponen elektronika, robotika, dan perangkat keras pintar.</p>
-                </div>
-
-                <div class="jurusan-card">
-                    <img src="ka.webp" alt="Deskripsi Gambar" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 15px;">
-                    <h3>Kimia Analisis</h3>
-                    <p><strong>Kimia Analisis:</strong> Mempelajari teknik analisis laboratorium kimia, pengujian sampel, serta kontrol kualitas industri.</p>
-                </div>
-
-                <div class="jurusan-card">
-                    <img src="lpb.webp" alt="Deskripsi Gambar" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 15px;">
-                    <h3>Layanan Perbankan</h3>
-                    <p><strong>Layanan Perbankan:</strong> Mempelajari pengelolaan administrasi keuangan, prosedur transaksi perbankan, dan pelayanan nasabah.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <div class="dua-kolom">
-            
-            <div id="ekskul" class="kolom">
-                <h2 class="section-title text-left">Ekstrakurikuler</h2>
-                <ul class="ekskul-list">
-                    <li><strong>3P:</strong> Pramuka, Paskibra, Palang Merah Remaja (PMR)</li>
-                    <li><strong>Olahraga:</strong> Futsal, Basket, Badminton, Voli, Silat</li>
-                    <li><strong>Seni & Teknologi:</strong> MAHA 5 (Band Musik), Robotik, Bahasa Jepang</li>
-                </ul>
-            </div>
-
-            <div id="kontak" class="kolom">
-                <h2 class="section-title text-left">Hubungi Kami</h2>
-                <p><strong>Alamat:</strong><br>Jl. Perum Villa Indah Permai No.RT 009/033 Blok E27, RT.009/RW.033, Tlk. Pucung, Kec. Bekasi Utara, Kota Bks, Jawa Barat 17121</p>
-                <br>
-                <p><strong>Email:</strong><br>info@smknegeri5bekasi.sch.id</p>
-
-            </div>
-
-            <div id="ujian" class="kolom">
-                <h2 class="section-title text-left">Ujian</h2>
-
-                <p><strong>Tujuan:</strong><br>untuk membangkitkan potensi calon siswa/siswi agar bisa bersaing menjadi siswa/siswi SMKN 5 KOTA BEKASI</p>
-                <br>
-
-                <button type="submit" id="submitBtn"><a href="javasdex.html">masuk Ujian</a></button>
-
-            </div>
-
-
-           
-
-
-        </div>
-
+      <!-- Daftar Project Sesi QR -->
+      <div id="projectList" class="space-y-4"></div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 SMKN 5 Kota Bekasi. All Rights Reserved.</p>
-    </footer>
+    <!-- Modal Buat Sesi Baru -->
+    <div
+      id="folderModal"
+      class="fixed inset-0 bg-black/50 hidden flex items-center justify-center p-4 z-50"
+    >
+      <div class="bg-white rounded-xl shadow-2xl max-w-sm w-full p-6">
+        <h3 class="text-lg font-bold text-gray-800 mb-4">
+          Buat Sesi Tanggal Absen
+        </h3>
+        <form onsubmit="createProject(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1"
+              >Nama / Tanggal Sesi</label
+            >
+            <input
+              type="text"
+              id="inputSesi"
+              placeholder="Contoh: Pertemuan Senin - Merakit Robot"
+              required
+              class="w-full border border-gray-300 rounded-lg p-2 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-gray-600 mb-1"
+              >Link Tujuan Web Siswa</label
+            >
+            <input
+              type="url"
+              id="inputUrl"
+              value="https://contoh-website-siswa.html"
+              required
+              class="w-full border border-gray-300 rounded-lg p-2 text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            />
+            <span class="text-[10px] text-gray-400"
+              >Sesuaikan dengan link `siswa.html` kamu saat
+              di-hosting/dibuka.</span
+            >
+          </div>
+          <div class="flex justify-end gap-2 pt-2">
+            <button
+              type="button"
+              onclick="closeFolderModal()"
+              class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium"
+            >
+              Batal
+            </button>
+            <button
+              type="submit"
+              class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm font-medium"
+            >
+              Buat
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-</body>
+    <script>
+      function openFolderModal() {
+        document.getElementById("folderModal").classList.remove("hidden");
+      }
+      function closeFolderModal() {
+        document.getElementById("folderModal").classList.add("hidden");
+      }
+
+      function createProject(e) {
+        e.preventDefault();
+        const namaSesi = document.getElementById("inputSesi").value;
+        const targetUrl = document.getElementById("inputUrl").value;
+        const tanggal = new Date().toLocaleDateString("id-ID", {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+
+        let projects =
+          JSON.parse(localStorage.getItem("qr_projects_robotik")) || [];
+        projects.unshift({ id: Date.now(), namaSesi, targetUrl, tanggal });
+        localStorage.setItem("qr_projects_robotik", JSON.stringify(projects));
+
+        closeFolderModal();
+        renderProjects();
+        document.getElementById("inputSesi").value = "";
+      }
+
+      function renderProjects() {
+        const container = document.getElementById("projectList");
+        const projects =
+          JSON.parse(localStorage.getItem("qr_projects_robotik")) || [];
+
+        if (projects.length === 0) {
+          container.innerHTML = `<div class="bg-white p-8 rounded-xl text-center border border-gray-200 text-gray-400 text-sm">Belum ada sesi QR Code. Klik tombol (+) di atas.</div>`;
+          return;
+        }
+
+        container.innerHTML = projects
+          .map(
+            (p) => `
+                <div class="bg-white border border-gray-200 p-6 rounded-xl shadow-sm flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="w-full">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-indigo-50 text-indigo-600 font-semibold px-2 py-1 rounded">${p.tanggal}</span>
+                            <!-- Tombol Hapus Sesi -->
+                            <button onclick="deleteProject(${p.id})" class="text-red-400 hover:text-red-600 text-sm p-1 transition" title="Hapus Sesi Ini">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                        <h3 class="text-md font-bold text-gray-800 mt-2">${p.namaSesi}</h3>
+                        <p class="text-xs text-gray-500 mt-1">Link Target: <a href="${p.targetUrl}" target="_blank" class="text-indigo-600 underline">${p.targetUrl}</a></p>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <div id="qrcode-${p.id}" class="bg-white p-2 rounded shadow-sm mb-2"></div>
+                        <button onclick="generateQR('${p.targetUrl}', 'qrcode-${p.id}')" class="text-xs bg-indigo-600 text-white px-3 py-1.5 rounded font-medium hover:bg-indigo-700 transition">Klik Generate QR</button>
+                    </div>
+                </div>
+            `,
+          )
+          .join("");
+
+        projects.forEach((p) => generateQR(p.targetUrl, `qrcode-${p.id}`));
+      }
+
+      // Fungsi Hapus Project Sesi QR
+      function deleteProject(id) {
+        if (confirm("Apakah kamu yakin ingin menghapus sesi QR code ini?")) {
+          let projects =
+            JSON.parse(localStorage.getItem("qr_projects_robotik")) || [];
+          projects = projects.filter((p) => p.id !== id);
+          localStorage.setItem("qr_projects_robotik", JSON.stringify(projects));
+          renderProjects();
+        }
+      }
+
+      function generateQR(url, elementId) {
+        const el = document.getElementById(elementId);
+        if (el) {
+          el.innerHTML = "";
+          new QRCode(el, {
+            text: url,
+            width: 110,
+            height: 110,
+          });
+        }
+      }
+
+      window.onload = function () {
+        renderProjects();
+      };
+    </script>
+  </body>
 </html>
